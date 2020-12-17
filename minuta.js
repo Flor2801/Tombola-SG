@@ -1,7 +1,14 @@
 const boton = document.getElementById("tombola-minuta")
 const resultado = document.getElementById("ganador")
+let date = document.getElementById("date")
 
 
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+
+date.innerHTML = d + "/" + m + "/" + y;
 let nombresEquipo = ['Liv', 'Vicky', 'Flor', 'Barbi', 'Elías', 'Leandro', 'José', 'Ayi', 'Daniel']
 
 const obtenerPosicion = () => {
@@ -9,11 +16,11 @@ const obtenerPosicion = () => {
     return Math.floor(Math.random() * largo);
 }
 
-
 const obtenerNombre = () => {
     return nombresEquipo[obtenerPosicion(nombresEquipo)]
 }
 
 boton.onclick = () => {
+   resultado.classList.add("nombre-ganador") 
    resultado.textContent = obtenerNombre()
 }
