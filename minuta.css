@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .contenedor {
+    width: 500px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: Montserrat, sans-serif;
     margin-top: 70px;
+    background-color: #5d58f7;
+    color: white;
+    margin: auto;
+    margin-top: 70px;
+    
 }
 
 button {
@@ -24,7 +31,7 @@ button {
 }
 
 #tombola-minuta:active {
-    background-color: rgb(45, 3, 161);
+    background-color: rgb(42, 3, 185);
     border: none;
     border-style: none;
   }
@@ -40,7 +47,7 @@ button {
 .resultado {
     width: 300px;
     height: 80px;
-    background-color: gainsboro;
+    background-color: rgb(240, 239, 239);
     margin: 10px;
     display: flex;
     justify-content: center;
@@ -57,10 +64,11 @@ button {
 #tombola-minuta {
     width: 80px;
     height: 40px;
-    background-color: rgb(74, 8, 255);
+    background-color: rgb(255, 154, 21);
     margin: 10px;
     border-style: none;
-    border-radius: 7px;
-    color: rgb(219, 219, 219);
+    border-radius: 10px;
+    color: rgb(245, 241, 241);
     font-family: Montserrat, sans-serif;
+    font-weight: 200;
 }
